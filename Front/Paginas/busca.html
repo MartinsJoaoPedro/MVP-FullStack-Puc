@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <title>IFrutas</title>
+</head>
+
+<body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2 onclick="estoque()">Busca</h2>
+
+            <section class = "ajusteAtt">
+                <span onclick="estoque()" id="estoque" class="addBtn">Estoque</span>
+            </section>
+        </div>
+
+        <!-- Opções para bucar uma pessoa -->
+        <section class="image-background buscarPessoa myTable">
+            <div class = "ajusteTable">
+            <!-- id= referenciar o css placeholder= texto de predefinição -->
+            <input type="text" id="getId" placeholder="Id:">
+            <input type="text" id="getNome" placeholder="Nome:">
+            <input type="text" id="getQuantidade" placeholder="Quantidade:">
+            <input type="text" id="getValor" placeholder="Valor:">
+            <span onclick="buscarProduto()" id = "buscar" class="addBtn">Buscar</span>
+            <span onclick="busca()"  id = "att2" class="addBtn">Limpar Busca</span>
+        </div>
+        </section>
+    </header>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr id="idDaLinha">
+                <td>Nome</td>
+                <td>Quantidade</td>
+                <td>Valor</td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="../scripts.js"></script>
+</body>
+
+</html>

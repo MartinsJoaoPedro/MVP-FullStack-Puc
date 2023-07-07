@@ -1,0 +1,74 @@
+[2023-05-01 15:08:22,266] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:24,752] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:27,756] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:08:27] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:28,042] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:08:28] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:28,046] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:08:28] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:28,048] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:08:28] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:28,159] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:08:28] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:28,163] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:08:28] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:31,735] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:08:31] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:31,750] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:08:31] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:45,544] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:08:45] "GET /produtos HTTP/1.1" 200 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:08:56,053] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:08:56] "POST /produto HTTP/1.1" 200 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:06,516] INFO _log() L224   * Detected change in 'C:\\Users\\jpmar\\OneDrive\\Área de Trabalho\\MVP Sprint1\\meu_app_api\\model\\produto.py', reloading - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:06,764] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:09,499] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:12,372] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:09:12] "[35m[1mGET /produtos HTTP/1.1[0m" 500 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:12,999] ERROR log_exception() L1449 Exception on /produtos [GET] - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\scaffold.py", line 109, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jpmar\OneDrive\Área de Trabalho\MVP Sprint1\meu_app_api\app.py", line 79, in get_produtos
+    produtos = session.query(Produto).all()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 2159, in query
+    return self._query_cls(entities, self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\query.py", line 180, in __init__
+    self._set_entities(entities)
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\query.py", line 187, in _set_entities
+    self._raw_columns = [
+                        ^
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\query.py", line 188, in <listcomp>
+    coercions.expect(
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\coercions.py", line 181, in expect
+    insp._post_inspect
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 1184, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+                                           ^^^^^^^^^^^^^^
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\mapper.py", line 2182, in _post_inspect
+    self._check_configure()
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\mapper.py", line 1924, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\mapper.py", line 3483, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\mapper.py", line 3518, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Produto->produto'. Original exception was: When initializing mapper mapped class Produto->produto, expression 'Comentario' failed to locate a name ('Comentario'). If this is a class name, consider adding this relationship() to the <class 'model.produto.Produto'> class after both dependent classes have been defined.
+[2023-05-01 15:09:13,021] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:09:13] "[35m[1mGET /produtos HTTP/1.1[0m" 500 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:20,587] INFO _log() L224   * Detected change in 'C:\\Users\\jpmar\\OneDrive\\Área de Trabalho\\MVP Sprint1\\meu_app_api\\model\\produto.py', reloading - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:20,807] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:23,531] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:09:23] "GET /produtos HTTP/1.1" 200 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:23,538] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:09:23] "GET /produtos HTTP/1.1" 200 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:25,237] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:09:25] "GET /produtos HTTP/1.1" 200 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:48,110] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:09:48] "GET /produtos HTTP/1.1" 200 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-05-01 15:09:56,375] INFO _log() L224  127.0.0.1 - - [01/May/2023 15:09:56] "GET /produtos HTTP/1.1" 200 - - call_trace=C:\Users\jpmar\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
